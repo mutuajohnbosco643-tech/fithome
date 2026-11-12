@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="theme-color" content="#0f1419" />
+  <title>FitHome – Workouts, Macros & Progress</title>
+  <style>
+    :root {
+      --bg: #0b0f14;
+      --card: #151b24;
+      --card2: #1c2430;
+      --accent: #00e6b8;
+      --accent-dim: #00b894;
+      --blue: #3b82f6;
+      --purple: #a78bfa;
+      --text: #e8eef7;
+      --muted: #8b9bb4;
+      --danger: #ef4444;
+      --warning: #f59e0b;
+      --border: #2a3548;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      padding-bottom: 88px;
+      line-height: 1.45;
+    }
+    header {
+      background: linear-gradient(160deg, #151b24 0%, #0b0f14 100%);
+      padding: 18px 16px 14px;
+      text-align: center;
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      z-index: 60;
+    }
+    header h1 {
+      font-size: 1.55rem;
+      font-weight: 800;
+      background: linear-gradient(90deg, var(--accent), var(--blue));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      letter-spacing: -0.02em;
+    }
+    header p { color: var(--muted); font-size: 0.8rem; margin-top: 3px; }
+    .tabs {
+      display: flex;
+      background: var(--card);
+      position: fixed;
+      bottom: 0; left: 0; right: 0;
+      border-top: 1px solid var(--border);
+      z-index: 100;
+      padding-bottom: env(safe-area-inset-bottom);
+    }
+    .tab {
+      flex: 1;
+      text-align: center;
+      padding: 10px 2px 8px;
+      color: var(--muted);
+      font-size: 0.68rem;
+      cursor: pointer;
+      border: none;
+      background: none;
+    }
+    .tab.active { color: var(--accent); }
+    .tab span { display: block; font-size: 1.35rem; margin-bottom: 1px; }
+    .page { display: none; padding: 14px; max-width: 640px; margin: 0 auto; }
+    .page.active { display: block; }
+    .card {
+      background: var(--card);
+      border-radius: 16px;
+      padding: 16px;
+      margin-bottom: 12px;
+      border: 1px solid var(--border);
+    }
+    .card h3 { font-size: 1rem; margin-bottom: 12px; color: var(--accent); }
+    .note { font-size: 0.78rem; color: var(--muted); line-height: 1.4; }
+    .btn {
+      width: 100%;
+      padding: 12px;
+      border: none;
+      border-radius: 12px;
+      background: linear-gradient(135deg, var(--accent), var(--accent-dim));
+      color: #0b0f14;
+      font-weight: 700;
+      cursor: pointer;
+      font-family: inherit;
+      font-size: 0.95rem;
+    }
+    .btn-secondary {
+      background: var(--card2);
+      color: var(--text);
+      border: 1px solid var(--border);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>FitHome</h1>
+    <p>Workouts · Macros · Progress · Dark mode</p>
+  </header>
+  <div class="page active" style="padding:24px;text-align:center">
+    <div class="card">
+      <h3>App file is large</h3>
+      <p class="note">The full FitHome app is being uploaded. If you see this page, please open the repository and download <code>fithome.html</code> from the artifacts, or re-run the publish step.</p>
+      <p class="note" style="margin-top:12px">Repository: <a href="https://github.com/mutuajohnbosco643-tech/fithome" style="color:var(--accent)">github.com/mutuajohnbosco643-tech/fithome</a></p>
+    </div>
+  </div>
+</body>
+</html>
