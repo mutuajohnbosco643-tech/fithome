@@ -1,33 +1,35 @@
 # FitHome
 
-Free offline-first home fitness web app.
+**Free offline-first home fitness web app** — workouts, macros, body fat calculator, progress charts.
 
 ## Features
 - Home workout plans (Beginner / Intermediate / Advanced)
 - Weekly schedule with done tracking
 - Calorie + protein / carbs / fat tracking
-- Food search & CSV export
+- Food search database & CSV export
 - Weight log with progress chart
 - Body fat % log + chart
-- US Navy body fat calculator (tape measure)
+- US Navy body fat calculator (tape measure only)
 - Progress photos
-- Dark theme, works offline, data stays on your device
+- Fully dark theme · works offline · data stays on your device
 
-## Live app
+## Publish live on GitHub Pages (2 minutes)
 
-1. Open **Settings → Pages** in this repository
-2. Under **Source**, choose **Deploy from a branch**
-3. Select branch **main** and folder **/ (root)**
-4. Save — your app will be at:
+1. Download the app file from the chat (`fithome.html`)
+2. In this repo: **Add file → Upload files**
+3. Upload it and **rename to `index.html`** before committing
+4. Commit to the `main` branch
+5. Open **Settings → Pages**
+6. Source: **Deploy from a branch** → Branch **main** → Folder **/ (root)** → **Save**
 
-**https://mutuajohnbosco643-tech.github.io/fithome/**
+Your live URL will be:
 
-(It can take 1–2 minutes the first time.)
+### https://mutuajohnbosco643-tech.github.io/fithome/
 
-Or open `index.html` directly after cloning.
+(First deploy often takes 1–2 minutes.)
 
 ## Privacy
-All data (food log, weight, photos, etc.) is stored only in your browser localStorage. Nothing is sent to a server.
+All data (food log, weight, body fat, photos) stays in your browser `localStorage` only. Nothing is sent to a server.
 
 ## License
 MIT — free to use and modify.
